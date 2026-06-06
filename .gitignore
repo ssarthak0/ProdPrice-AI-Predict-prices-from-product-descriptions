@@ -1,0 +1,28 @@
+# Environment
+.env
+.venv/
+venv/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+
+# uv
+.python-version.local
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Project artifacts
+batches.pkl
+lite/
+full/
+human_in.csv
+human_out.csv
+
+# OS
+.DS_Store
+Thumbs.db

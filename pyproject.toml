@@ -1,0 +1,32 @@
+[project]
+name = "prodprice-ai"
+version = "0.1.0"
+description = "Predict product prices from descriptions using ML and LLMs"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "python-dotenv>=1.0.0",
+    "huggingface-hub>=0.26.0",
+    "datasets>=3.0.0",
+    "pydantic>=2.0.0",
+    "numpy>=1.26.0",
+    "pandas>=2.0.0",
+    "matplotlib>=3.8.0",
+    "scikit-learn>=1.4.0",
+    "xgboost>=2.0.0",
+    "torch>=2.0.0",
+    "tqdm>=4.66.0",
+    "plotly>=5.18.0",
+    "litellm>=1.0.0",
+    "groq>=0.4.0",
+    "openai>=1.0.0",
+    "ipykernel>=6.0.0",
+    "jupyterlab>=4.0.0",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["pricer"]
